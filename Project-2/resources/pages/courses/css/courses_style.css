@@ -1,0 +1,372 @@
+/*ORANGE COLOR #e67e22*/
+/*-------------------------------------------*/
+/* BASIC SETUP*/
+/*-------------------------------------------*/
+
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    color:#fff;
+    font-family: 'Lato', 'Arial' sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*---------------------------------------------------*/
+/*   REUASABLE COMPONENTS  */
+/*---------------------------------------------------*/
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.box { /* span 1-of-4 content, added box to not mess with the grid content. spacing between li*/
+    padding: 1%;
+}
+
+
+/*---------------------------------------------------*/
+/*   NAV */
+/*---------------------------------------------------*/
+nav {
+    /*margin-top: 10px;*/
+    background-color:#ffffff;
+    border-bottom:5px solid;
+    /*z-index: 2;*/
+    box-shadow: 10px 10px;
+
+    
+}
+
+nav li {
+    position: relative;
+    display: block;
+    float: right;
+    right: 60px;
+    margin: 15px;
+    top: -60px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.above-nav {
+  background-color: black;
+  color: white;
+  height: 40px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.above-row {
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+/*---------------------------------------------------*/
+/*   ICON */
+/*---------------------------------------------------*/
+.ion-ios-telephone-outline {
+  position: relative;
+  color: white;
+  float: right;
+  right: 100px;
+}
+.ion-ios-home-outline {
+  position: relative;
+  color: white;
+  float: right;
+  right: 55px;
+}
+
+.ion-ios-search {
+  position: relative;
+  left: 50px;
+}
+
+.above-nav a:active,
+.above-nav a:hover {
+  color: orange;
+  transition: 0.04s, color 0.04s;
+}
+
+.offer-box i {
+  padding-right: 10px;
+  font-size: 2em;
+  font-family: fantasy;
+  -webkit-text-stroke: 1px;
+}
+.cloud {
+  position: relative;
+  align-items: center;
+  left: 280px;
+}
+
+.fa-bars {
+  display: none;
+}
+/*---------------------------------------------------*/
+/*   BUTTONS */
+/*---------------------------------------------------*/
+.start:link,
+.start:visited {
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid;
+  background-color: #8ebebe;
+  transition: 0.4s, border 0.2s, color 0.2s;
+}
+
+button.btn-full {
+  position: relative;
+  top: 100px;
+  margin-right: 150px;
+  border: 1px solid;
+  height: 42px;
+  width: 245px;
+  border-radius: 14px;
+  left: -5px;
+  text-align: center;
+  background-color: #75bfbf;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+/*---------------------------------------------------*/
+/*   HEADER */
+/*---------------------------------------------------*/
+.logo {
+    position: relative;
+    width: 150px;
+    left: 30px;
+    margin-left: 350px;
+}
+
+.nav-menu {
+    margin-right: 350px;
+}
+
+.nav-menu a {
+   color: black;
+    font-size: 1.2em;
+    font-weight:800;
+    
+}
+
+
+
+.aws-span{
+   /* background-image: linear-gradient(rgba(3, 3, 3, 0.6), rgba(0, 0, 0, 0.6)), url(img/motherboard_back.jpg); */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    background-color: #232f3e;
+}
+
+.course{
+     position: absolute;
+     width: 1140px;
+    text-transform: uppercase;
+    font-family: 'Lato', 'Arial' sans-serif;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffff;
+    font-size: 45px;
+}
+
+
+.about-aws {
+    text-align: center;
+    line-height: 120%;
+    color: #fff;
+    border-top: 100px;
+    position: relative;
+    padding: 250px;
+}
+
+/*---------------------------------------------------*/
+/* FEATURES
+/*---------------------------------------------------*/
+.other-cloud {
+    background-color: #ededed;
+    color: black;
+
+}
+
+.cloud-logo {
+    position: relative;
+    display: inline-block;   
+     border-right: 5px solid #f48024;
+    border-left: 5px solid #f48024;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 15px;
+    margin-right: 30px;
+    margin-bottom: 0;
+   
+}
+
+
+
+.certs-features {
+    background-color: #ededed;
+
+}
+
+
+/*---------------------------------------------------*/
+/*  LOGOS*/
+/*---------------------------------------------------*/
+
+
+.aws-logo {
+    right: 110px;
+ 
+}
+
+
+.azure-logo {
+    
+    right: 10px;
+   
+   
+}
+
+.google-logo {
+    left: 110px;
+ 
+  
+}
+
+.alibaba-logo {
+    left: 210px;
+  
+   
+    }
+
+/*---------------------------------------------------*/
+/*   HEADINGS */
+/*---------------------------------------------------*/
+h4 {
+    position: relative;
+    font-style: ; 
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+        
+}
+
+
+/*---------------------------------------------------*/
+/*  FOOTER*/
+/*---------------------------------------------------*/
+.footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 50%;
+    bottom: 50%;
+    width: 100%;
+    border-bottom: 0px;
+}
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+.social-links {
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li: last-child,
+.social-links li: last-child {
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #dddddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-instagram,
+.ion-social-twitter,
+.ion-social-youtube {
+    transition: color .2s;
+}
+
+
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+.ion-social-instagram:hover {
+    color: #e95950;
+}
+.ion-social-twitter:hover {
+    color: #55acee;
+}
+.ion-social-youtube:hover {
+    color: #ff0000;
+}
+
+
+
+.footer p{
+color: #888;
+text-align: center;
+margin-top: 20px;
+font-size: 70%;
+}

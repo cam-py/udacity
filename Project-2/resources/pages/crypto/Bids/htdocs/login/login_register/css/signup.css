@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    background-color: #181F42;
+    margin-left: 250px;
+}
+
+
+
+ ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+/*---------------------------------------------------*/
+/*   NAVIGATION */
+/*---------------------------------------------------*/
+
+.logo {
+    color: white;
+    margin-left: 10px;
+}
+
+nav li a:link,
+nav li a:visited {
+    color: #fff;
+}
+nav li a:hover,
+nav li a:active {
+    color: #dddddd;
+}
+
+nav li {
+    position: relative;
+    display: inline-flex;
+    float: right;
+    top: -32px;
+   
+}
+
+
+/*---------------------------------------------------*/
+/*   SIGN UP */
+/*---------------------------------------------------*/
+.signup-container{
+    position: relative;
+    background-color: #181F42;
+    height: 900px;
+    margin: 50px;
+    border: 1px solid grey;
+    padding: 70px;
+}
+
+.get-started {
+    position: relative;
+    top: -40px;
+    text-align: center;
+    font-family:sans-serif;
+}
+
+.get-started-line {
+    position: relative;
+    top: -30px;
+    border: .1px solid black;
+}
+
+#fname, #phone{
+    position: relative;
+    margin-bottom: 10px;
+    padding: 13px;
+    width: 100%;
+    font-weight: 600;
+    border: 1px solid;
+    text-align: center;
+}
+
+
+input {
+    background-color: #485479;
+    width: 100%;
+    border-radius: 14px;
+    padding: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:sans-serif;
+    font-weight: 600;
+    
+}
+
+
+ textarea {
+    position: relative;
+    width: 100%;
+    max-height: 115px;
+    border: 1px solid;
+    
+}
+input[type=submit] {
+    margin-top: 10px;
+    background: #75bfbf;
+    color: white;
+    font-weight: 800;
+
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #8ebebe;
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+ textarea::placeholder {
+    color: grey;
+}
+
+
+/*---------------------------------------------------*/
+/*   NAVIGATION */
+/*---------------------------------------------------*/
+
+.logo {
+    color: white;
+    margin-left: 10px;
+}
+
+nav li a:link,
+nav li a:visited {
+    color: #fff;
+}
+nav li a:hover,
+nav li a:active {
+    color: #dddddd;
+}
+
+nav li {
+    position: relative;
+    display: inline-flex;
+    float: right;
+    top: -32px;
+   
+}
+
+/*---------------------------------------------------*/
+/*  FOOTER*/
+/*---------------------------------------------------*/
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 50%;
+   
+    width: 100%;
+    border-bottom: 0px;
+}
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+.social-links {
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li :last-child,
+.social-links li :last-child {
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #dddddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter,
+.fa-youtube {
+    transition: color .2s
+}
+
+
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+.fa-instagram:hover {
+    color: #e95950;
+}
+.fa-twitter:hover {
+    color: #55acee;
+}
+.fa-youtube:hover {
+    color: #ff0000;
+}
+
+
+
+footer p{
+color: #888;
+text-align: center;
+margin-top: 20px;
+font-size: 70%;
+}
+/*position: absolute;
+    left: 60px;
+    right: 256%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;*/
+
+/*---------------------------------------------------*/
+/*   MEDIA-QEURIES */
+/*---------------------------------------------------*/
+
+@media screen and (max-width:600px) {
+    html {
+        margin: 0px;
+    }
+    .logo {
+        margin-left: 20px;
+        font-size: 2em;
+    }
+    nav li {
+        display: none;
+    }
+    .fa-bars {
+        position: relative;
+        float: right;
+        top: -70px;
+        color: white;
+        margin-right: 20px;
+        font-size: 2em;
+    }
+    
+    .fa-bars:hover,
+    .fa-bars:active{
+         color: #585757;
+         transition: color .4s;
+    }
+
+    
+    .sign-up {
+        position: relative;
+        text-align: center;
+        left: 210px;
+        top: -45px;
+        width: 114px;
+        border: 1px solid grey;
+        border-radius: 14px;
+        color: white;
+        background-color: #293d7c;
+    
+    }
+    .sign-up a:link,
+    .sign-up a:visited {
+        color: white;
+        
+    }
+    
+     .sign-up:hover,
+     .sgin-up:active{
+        background-color: #4c5a84;
+         transition: color .4s;
+    }
+    h2 {
+        position: relative;
+        color: white;
+        text-align: center;
+        bottom: -100px;
+        font-family:sans-serif
+    }
+    #frmLogin {
+        
+        margin-top: 100px;
+        background-color: #293d7c;
+        height: 400px;
+        color: white;  
+        
+    }
+    .login-container {
+        position: relative;
+        margin-left: 5px;
+        margin-top: 130px;
+        
+    }
+   
+    #username {
+        position: relative;
+         margin-top: 40px;
+    }
+    input[type=text],
+    input[type=password]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 14px;
+        text-align: center;
+        
+    }
+    button {
+        padding: 14px 20px;
+        margin: 8px -2px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        color: white;
+        background-color: #4961aa;
+    }
+    button:hover {
+        opacity: 0.8;
+    }
+    .cancelbtn {
+        position: relative;
+        width: auto;
+        padding: 10px 18px;
+        bottom: 90px;
+    }
+    span.psw {
+        position: relative;
+        float: right;
+        top: -68px;
+    }
+    span a{
+        color: white;
+    }
+    
+    
+    footer {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        left: 1px;
+        font-size: .7em;
+    }
+}

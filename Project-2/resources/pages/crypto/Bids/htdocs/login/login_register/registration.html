@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>
+         <!--tells mobile phones to start with a scale of 1 and not zoom out-->
+        <meta name="viewport" content="width=device-width, initial-scal=1.0"> 
+        <meta charset="utf-8">
+        
+       <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+       <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+       <link rel="stylesheet" type="text/css" href="/vendors/css/ionicons.min.css"> 
+       <link rel="stylesheet" type="text/css" href="./css/registraton_style.css">
+       <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type='text/css'> 
+                             <!--font weight is chosen from your google link options 100, 300 400-->
+        <title><img src="img/new_gwa_logo.png"/>Login and Registration</title>
+        <!-- This will put the GWA logo on the browser-->
+        <link rel="shortcut icon" href="/resources/img/GWA_logo.ico">
+        
+    </head>
+    <body>
+    <header>
+         <nav>
+            <h1 class="login-title">CHICHIA</h1>
+            <img class="login-logo" src="/resources/login/login_register/img/login-logo.png">
+             <!--<div class="top-bar">
+                <div class="row">
+                    <a href="/resources/index.html"><img  src="./img/new_gwa_logo.png" alt="The Geek Way Logo" class="logo" ></a>
+                    <ul class="main-nav">
+                        <li><a href="/resources/index.html">Home</a></li>
+                        <li><a href="pages/courses/courses.html">Courses</a></li>
+                        <li><a href="/resources/pages/courses/">About</a></li>
+                        <li><a href="\resources\pages/login_register/login.html">Login </a></li>
+                    </ul>
+                </div>
+                 </div>-->
+            </nav>
+        </header>
+       <div class="login-page">
+       <div class="form">
+           <form class="register-form">
+               <input type="text" placeholder="First Name"/>
+               <input type="text" placeholder="Last Name"/>
+               <input type="text" placeholder="email"/>
+               <input type="text" placeholder="street and apt#"/>
+               <input type="text" placeholder="city, state"/>
+               <input type="text" placeholder="zipcode"/>
+               <input type="text" placeholder="username"/>
+               <input type="text" placeholder="password"/>
+               <input type="text" placeholder="current occupation"/>
+               <button>CREATE</button>
+               <p class="message">already registered?<a href="/resources/wallet/wallet.html">Login</a></p>
+           </form>
+           
+           <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+                <button>login</button>
+                    <p class="message">not registered?<a href="#">Register</a></p>
+           </form>
+           </div>
+        </div>
+    
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+            <script>
+              $('.message a').click(function(){
+                $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+              });  
+           </script>
+
+    
+        <footer>
+            <div class="row">
+                <div class="col span 1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">ios App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div> 
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="row">
+                    <p>
+                        Copyright &copy; 2020 by Geek Way Academy an affiliate of The Geek Way. All rights reserved.
+                    </p>
+                </div>
+        </footer>
+    </body>
+    
+
+</html>

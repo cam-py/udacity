@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <title>GEEK WAY ACADEMY</title>
+    <!--This section will highlight the two courses being offered AWS Pc Net & Sec-->
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" type="text/css" href="./css/courses_style.css" />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../../../vendors/css/ionicons.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../../../vendors/css/normalize.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../../../vendors/css/grid.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../../../vendors/fontawesome-free-5.15.2-web/css/fontawesome.css"
+      />
+      <script
+        src="https://kit.fontawesome.com/72b2cccba7.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <title>Geek Way Academy</title>
+    </head>
+
+    <body>
+      <header>
+        <div class="above-nav">
+          <div class="above-row">
+            <i class="ion-ios-search"></i>
+            <a href="#" class="ion-ios-telephone-outline"></a>
+            <a href="#" class="ion-ios-home-outline"></a>
+          </div>
+        </div>
+        <nav>
+          <a href="../../index-old.html"
+            ><img
+              src="../../img/geekwayLogo_transp.png"
+              alt="The Geek Way Logo"
+              class="logo"
+          /></a>
+          <ul class="nav-menu">
+            <li id="nav-list--3">
+              <a href="./pages/login_register/login.html">Login</a>
+            </li>
+            <li id="nav-list--0"><a href="#">Portfolio</a></li>
+            <li id="nav-list--1"><a href="#">About</a></li>
+            <li id="nav-list--2"><a href="#">Services</a></li>
+          </ul>
+          <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+        </nav>
+        <div class="aws-span">
+          <div class="course">
+            <h1>
+              <span><b>Amazon Web Services</b></span>
+            </h1>
+          </div>
+          <div class="about-aws">
+            <!--align attritube of <p> is not supported in html5-->
+            <h2>
+              Cloud computing means storing and accessing data and programs over
+              the Internet instead of your computer's hard drive. The cloud is
+              just a metaphor for the Internet. <br />In this course you will
+              learn the fundamentals of Cloud computing and dive into AWS
+              Services <br />
+              Check out the top cloud providers
+            </h2>
+          </div>
+        </div>
+      </header>
+      <?php 
+            $classes=2;
+            $cost=$1500;
+            $availSeats=10;
+
+            print("$classes");
+            
+
+        ?>
+      <section class="other-cloud">
+        <div class="row">
+          <div class="col span cloud-logo">
+            <img
+              src="img/awslogo.jpg"
+              alt="AWS Logo"
+              class="aws-logo"
+              height="100"
+              width="100"
+            />
+            <h4 height="100" width="100">Amazon Web Services</h4>
+          </div>
+          <div class="col span cloud-logo">
+            <img
+              src="img/azurelogo.jpg"
+              alt="Microsoft Azure Logo"
+              class="azure-logo"
+              height="100"
+              width="100"
+            />
+            <h4 height="100" width="100">Microsoft Azure</h4>
+          </div>
+          <div class="col span cloud-logo">
+            <img
+              src="img/googlecloudogo.png"
+              alt="Google Cloud Logo"
+              class="google-logo"
+              height="100"
+              width="100"
+            />
+            <h4 height="100" width="100">Google Cloud Platform</h4>
+          </div>
+          <div class="col span cloud-logo">
+            <img
+              src="img/alibabalogo.png"
+              alt="Alibaba Cloud Logo"
+              class="alibaba-logo"
+              height="100"
+              width="100"
+            />
+            <h4 height="100" width="100">Alibaba Cloud</h4>
+          </div>
+        </div>
+      </section>
+      <!--Span allows me to tag what I want to edit in CSS later--
+        <section class="perks-features">
+            <div class="avg-pay"> 
+
+            </div>
+        </section> -->
+      <!-- List of all AWS certificates currently available-->
+      <section class="certs-features">
+        <div class="certs">
+          <ol>
+            <!-- added links to the list of certificated-->
+            <p>
+              <a
+                href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+                target="_blank"
+                ><li>AWS Cerfited Solutions Architect Associate</li></a
+              >
+            </p>
+            <p>
+              <a
+                href="https://aws.amazon.com/certification/certified-solutions-architect-professional/"
+                target="_blank"
+                ><li>AWS Certified Solutions Architect Professional</li></a
+              >
+            </p>
+            <p>
+              <a
+                href="https://aws.amazon.com/certification/certified-developer-associate/"
+                target="_blank"
+                ><li>AWS Certified DevOps Associate</li></a
+              >
+            </p>
+            <p>
+              <a
+                href="https://aws.amazon.com/certification/certified-sysops-admin-associate/"
+                target="_blank"
+                ><li>AWS Certified SysOps Associate</li></a
+              >
+            </p>
+            <p>
+              <a
+                href="https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+                ><li>AWS Certified DevOps Engineer Professional</li></a
+              >
+            </p>
+          </ol>
+        </div>
+      </section>
+
+      <hr font color="red" width="75%" />
+
+      <!--
+        <h1 align="center"><b>PC NETWORKING AND SECURITY</b> </h1>
+        <div style="background-color:grey;color:white;padding:20px;">
+            <p align="center"><img src="img/network-security.jpg" height="200px"  border ="1px" alt="" /></p>
+                <!--Should  the text after h1 be subscripted or left as a regular paragraph
+                Also I was testing how the break <br /> tag works
+                <p align="center"><sub>Emerge yourself in the world of networking and security, the heartbeat of information technology <br /> So are you ready?</sub></p>
+
+    <!-- Unordered list of Network and Security Certifications
+            <ul>
+                <p align="center"><a href ="https://www.comptia.org/certifications/network" target="_blank"><li> CompaTIa Network + Certifications</li></a></p>
+                <p align="center"><a href ="https://www.comptia.org/training/by-certification/security" target="_blank"><li> CompTIa Security + Certification</li></a></p>
+            </ul>
+        </div>
+            <p class="quote"><i>"It is never late, or difficult, you can do it, whatever it takes if you believe in your goals." - unknown </i> </p>
+            <p align="left"><sub>Locations</sub></p>
+            <p align="right"><sub>Connect with us</sub></p>
+       -->
+
+      <footer>
+        <div class="row">
+          <div class="col span 1-of-2">
+            <ul class="footer-nav">
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">ios App</a></li>
+              <li><a href="#">Android App</a></li>
+            </ul>
+          </div>
+          <div class="col span-1-of-2">
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="ion-social-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            Copyright &copy; 2020 by Geek Way Academy an affiliate of The Geek
+            Way. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </body>
+  </html>
+</html>

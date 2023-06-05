@@ -1,0 +1,808 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #f5f1ea;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: none;
+}
+
+.cart {
+    position: relative;
+    width: 1440px;
+    height: 850px;
+    background: #F5F6F8;
+   //left: 19px;
+   // background: #192A3E;;
+    
+}
+
+.sidebar-menu{
+    position: absolute;
+    top: -5em;   
+}
+
+.nav-icons {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+}
+
+.nav-icons  a:link,
+.nav-icons  a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.nav-icons  a:hover,
+.nav-icons  a:active {
+    color: #109CF1;
+}
+
+.ion-ios-list-outline,
+.ion-ios-cart-outline,
+.ion-ios-email-outline,
+.ion-ios-calendar-outline,
+.ion-arrow-graph-up-right,
+.ion-ios-folder-outline {
+    transition: color .2s
+}
+
+
+
+header {
+    
+}
+
+.search-bar {
+    width: 1184px;
+    height: 60px;
+    left: 256px;
+    right: 0px;
+    top: 0px;
+   
+    
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+.search-box {
+    position: absolute;
+    //left: 3.04%;
+    //right: 86.4%;
+    //top: 33.33%;
+    //bottom: 33.33%;
+    //width: 125px;
+    //height: 20px;
+    width: 125px;
+    height: 20px;
+    top: 20px;
+    left: 36%;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    left: 36px;
+}
+
+.ion-ios-search {
+    position: absolute;
+   display: flex;
+    width: 14.57px;
+    height: 14.57px;
+    left: 12.5%;
+    top: 12.5%; 
+    right: 14.62%;
+    bottom: 14.62%;
+}
+
+i.global-search-text {
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 68px;
+    top: 21px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    /* gray */
+
+    color: #90A0B7;
+}
+
+//.ion-ios-bell-outline {
+    position: absolute;
+    left: 16.67%;
+    right: 16.67%;
+    top: 10.42%;
+    bottom: 8.33%;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* icon_gray */
+
+    border: 1px solid #C2CFE0;
+    box-sizing: border-box;
+}
+.notification {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 36px;
+    top: 18px;
+
+}
+
+
+/*---------------------------------------------------*/
+/*   TOP DIVIDER*/
+/*---------------------------------------------------*/
+.top-divider {
+    position: absolute;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    top: 60px;
+    width: 1440px;
+    //border: .5px solid #EBEFF2;
+    
+    /*divider*/
+    background: #EBEFF2;
+}
+
+/*---------------------------------------------------*/
+/*   SIDE BAR*/
+/*---------------------------------------------------*/
+.side-bar {
+    position: absolute;
+    width: 256px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    //border: .5px solid #EBEFF2;
+    height: 850px;
+    background: #FFFFFF;
+    box-shadow: 6px 0px 18px 0 rgba(0, 0, 0, 0.86);
+}
+
+.side-nav-divider {
+    position: absolute;
+    width: 256px;
+    height: 1px;
+    left: 0px;
+    top: 415px;
+    border: .2px solid #EBEFF2;
+}
+
+.logo {
+    position: absolute;
+    width: 69px;
+    height: 26px;
+    top: 17px;
+    left: 24px;
+    color: #109CF1;
+    
+    font-family: sans-serif;/*ct*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;   
+}
+
+.profile-box {
+    position: absolute;
+    width: 208px;
+    height: 46px;
+    left: 24px;
+    top: 5px;/*ct*/
+    
+}
+
+li.pic-box {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 24px;
+    top 85px;
+    
+}
+
+.profile-pic {
+    position: absolute;
+    left: -19.57%;
+    right: -15.22%;
+    top: 0%;
+    bottom: -2.17%;
+    width: 62px;
+    height: 47px;
+    left: -9px;
+}
+
+li.user-box {
+    position: absolute;
+    width: 146px;
+    height: 17px;
+    //left: px;/*ct*/
+    top: 1px;   /*ct*/ 
+}
+
+.profile-user {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: monospace;/*ct*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+
+    /* black */
+
+    color: #192A3E;
+    
+    position: absolute;
+    width: 146px;
+    height: 21px;
+    left: 86px;
+    top: -6px; 
+}
+
+li.email-box {
+    position: absolute;
+    width: 146px;
+    height: 17px;
+    left: 86px;
+    top: 20px;
+    
+}
+
+.profile-email {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    /* gray */
+
+    color: #90A0B7;
+    
+}
+
+/*---------------------------------------------------*/
+/*   DASHBOARD */
+/*---------------------------------------------------*/
+.dashboard-nav {
+    position: absolute;
+    width: 208px;
+    height: 20px;
+    left: 24px;
+    top: 171px;
+}
+
+
+.ion-ios-list-outline {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 12.5%;
+    bottom: 12.5%;
+
+/* Accent blue */
+
+    //border: 1.4px solid #109CF1;
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.dashboard-text {
+    
+    left: 2em;
+    top: -1.1em;
+    position: absolute;
+    //display: flex;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    
+    
+}
+
+/*---------------------------------------------------*/
+/*   CART-NAV */
+/*---------------------------------------------------*/
+.cart-nav {
+    position: absolute;
+    //display: flex;
+    width: 208px;
+    height: 20px;
+    left: 24px;
+    top: 211px;
+}
+
+
+
+.ion-ios-cart-outline {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 12.5%;
+    bottom: 12.5%;
+
+/* Accent blue */
+    border: 1.4px solid #109CF1;
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.cart-text {
+    
+    left: 2em;
+    top: -1.1em;
+    position: absolute;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;color: #098EDF;
+    color: #098EDF;
+
+    
+}
+
+/*---------------------------------------------------*/
+/*   CART PAGE*/
+/*---------------------------------------------------*/
+
+#cart-table {
+    position: relative;
+    width: 1110px;
+    height: 697px;
+    left: 256px;
+    right: 74px;
+    top: 153px;
+    
+    filter: drop-shadow(0px 6px 18px rgba(0, 0, 0.06));
+}
+
+.cart-category li {
+    padding: 0 5em; 
+    display: block;
+    color: #000000;
+    letter-spacing: 0.01em;
+    
+    
+    
+}
+
+ul.cart-category {
+    //position: absolute;
+    width: auto;
+    //height: 18px;
+    height: 48px;
+    left: 357px;
+    top: 25px;
+    
+    display: flex;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 48px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-left: 1.5%;
+    margin-right: 10.8%;
+    
+        
+    
+}
+ul.cart-category {
+    position:;
+    
+    //left: 0px;
+    //right: 0px;
+    //top: 0px;
+    
+    
+}
+
+#items-checkbox {
+   position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 24px;
+    top: 16px;
+    color: #FFFFFF;
+}
+
+/*---------------------------------------------------*/
+/*   CART FILTER*/
+/*---------------------------------------------------*/
+
+#filter-box {
+    //position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 292px;
+    top: 120px;
+}
+
+#filter-dropdown {
+    position: inherit;
+    width: 93px;
+    height: 18px;
+    left: 292px;
+    top: 120px;
+}
+
+.ion-android-arrow-dropdown {
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    left: 385px;
+    top: 131px;
+
+/* dropdown_icon */
+
+    background: #AEAEAE;
+    //transform: rotate(-180deg);
+}
+
+#filter-text {
+    position: absolute;
+    width: 55px;
+    height: 18px;
+    left: 292px;
+    top: 120px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+/* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    color: #6A707E;
+}
+
+
+
+/*---------------------------------------------------*/
+/*   WALLET */
+/*---------------------------------------------------*/
+.wallet-nav {
+    position: absolute;
+    width: 208px;
+    height: 20px;
+    left: 24px;
+    top: 251px;
+}
+
+
+.ion-ios-email-outline {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 12.5%;
+    bottom: 12.5%;
+    width: 20px;
+    height: 20px;
+
+/* Accent blue */
+
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.wallet-text {
+    
+    left: 2em;
+    top: -1.1em;
+    position: absolute;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;    
+}
+
+/*---------------------------------------------------*/
+/*   CALENDER */
+/*---------------------------------------------------*/
+.calender-nav {
+    position: absolute;
+    width: 208px;
+    height: 20px;
+    left: 24px;
+    top: 291px;
+}
+
+
+.ion-ios-calendar-outline {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 12.5%;
+    bottom: 12.5%;
+
+/* Accent blue */
+
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.calender-text {
+    
+    left: 2em;
+    top: -1.1em;
+    position: absolute;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;    
+}
+
+/*---------------------------------------------------*/
+/*   EXCHANGE */
+/*---------------------------------------------------*/
+.exchange-nav {
+    position: absolute;
+    width: 208px;
+    height: 20px;
+    left: 24px;
+    top: 331px;
+}
+
+
+.ion-arrow-graph-up-right {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 12.5%;
+    bottom: 12.5%;
+
+/* Accent blue */
+
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.exchange-text {
+    
+    left: 2em;
+    top: -1.1em;
+    position: absolute;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;    
+}
+
+
+/*---------------------------------------------------*/
+/*  TASK */
+/*---------------------------------------------------*/
+#task-nav {
+    position: absolute;
+    width: 208px;
+    height: 20px;
+    left: 24px;
+    top: 371px;
+}
+
+
+.ion-ios-folder-outline {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 12.5%;
+    bottom: 12.5%;
+
+/* Accent blue */
+
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.task-text {
+    
+    left: 2em;
+    top: -1.1em;
+    position: absolute;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;    
+}
+
+/*---------------------------------------------------*/
+/*  SETTINGS */
+/*---------------------------------------------------*/
+#settings-nav {
+    position: absolute;
+    width: 208px;
+    height: 20px;
+    left: 50px;
+    top: 10px;
+}
+
+
+.ion-ios-settings {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 12.5%%;
+    bottom: 12.5%%;
+
+/* Accent blue */
+
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.settings-text {
+    position: absolute;
+     left: 2em;
+     top: -1.1em;
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+}
+
+
+/*---------------------------------------------------*/
+/*  FOOTER*/
+/*---------------------------------------------------*/
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 50%;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 0px;
+}
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+.social-links {
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li: last-child,
+.social-links li: last-child {
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #dddddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-instagram,
+.ion-social-twitter,
+.ion-social-youtube {
+    transition: color .2s
+}
+
+
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+.ion-social-instagram:hover {
+    color: #e95950;
+}
+.ion-social-twitter:hover {
+    color: #55acee;
+}
+.ion-social-youtube:hover {
+    color: #ff0000;
+}
+
+/*---------------------------------------------------*/
+/*  MEDIA QUERIES*/
+/*---------------------------------------------------*/
+
+@media (max-width: 500px) {
+    body {
+        color: blue;
+    }
+}
+
+
+
+footer p{
+color: #888;
+text-align: center;
+margin-top: 20px;
+font-size: 70%;
+}
+/*position: absolute;
+    left: 60px;
+    right: 256%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;*/
